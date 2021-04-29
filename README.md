@@ -84,9 +84,10 @@ saved drawing of 6 molecules with SMARTS pattern highlight: [#7]-[#6]-[#6](=[#6]
 ## TODO
 
 1. more testing
-2. error handling for incorrect input
-3. make the name and heading columns in SMILES file optional
-4. make name labels in drawings optional and allow selection of a specific column for the labels
-5. add option to align molecules by common template
+2. add some more descriptive comments in code
+3. error handling for incorrect input
+4. make the name and heading columns in SMILES file optional
+5. make name labels in drawings optional and allow selection of a specific column for the labels
+6. add option to align molecules by common template
 
 
