@@ -39,8 +39,6 @@ optional arguments:
 
 ## Example 1
 
-test_smiles.smi
-
 ```console
 $ head test_smiles.smi
 CC1CC=C(C=C1)C(=O)C2=CCC3=C(CC2N)C=CCC3	153201771	WKBCGMHOLSNYQO-UHFFFAOYSA-N	(6-amino-2,5,6,9-tetrahydro-1H-benzo[7]annulen-7-yl)-(4-methylcyclohexa-1,5-dien-1-yl)methanone
@@ -55,7 +53,7 @@ CC(C1=CC(CC(=C)C1=O)(C)C)N	68982156	GRVVQHSYQPHJGH-UHFFFAOYSA-N	2-(1-aminoethyl)
 
 ```
 
-Read the SMILES from standard in (stdin), draw first 6 molecules, and save file as example_draw2DG_01.png. 
+Read the SMILES from stdin, draw first 6 molecules, and save file as example_draw2DG_01.png. 
 
 ```console
 
@@ -69,8 +67,8 @@ saved drawing of 6 molecules as example_draw2DG_01.png
 
 ## Example 2
 
-Read the SMILES from standard in (stdin), draw first 6 molecules, highlight the substructure pattern matching 
-SMARTS '[#7]-[#6]-[#6](=[#6])-[#6]=O' and save file as example_draw2DG_02.png. 
+Read the SMILES from stdin, draw first 6 molecules, highlight the substructure pattern matching 
+SMARTS `'[#7]-[#6]-[#6](=[#6])-[#6]=O'` and save file as example_draw2DG_02.png. 
 
 ```console
 $ cat test_smiles.smi | python3 rdkit_draw2DG.py - -m6 -s '[#7]-[#6]-[#6](=[#6])-[#6]=O' -o example_draw2DG_02.png
